@@ -9,7 +9,7 @@ class App extends React.Component {
     tipAmount : '0',
     peopleShare : '0'
   }
-  
+  //function for calculating bill amount and tip
   calculate = () =>{
     var billAmt = parseInt(document.getElementById("bill").value);
     var service = parseFloat(document.getElementById("serviceQual").value);
@@ -27,14 +27,15 @@ class App extends React.Component {
     //console.log(this.state.billAmount , this.state.tipAmount , this.state.peopleShare)
     
   }
-  componentDidUpdate(){
-    console.log('component updated')
-    return(
-      <h1>hello</h1>
-    )
-  }
+  //componentDidUpdate(){
+   // console.log('component updated')
+   // return(
+    //  <h1>hello</h1>
+    //)
+ // }
   render(){
     return (
+      // this div for displaying required UI
       <div className="App">
         <h1>Tip Calculator</h1>
         <p>How much was your bill? </p>
@@ -58,6 +59,7 @@ class App extends React.Component {
   }
   
 }
+//this component for displaying updated state values
 const Unknown = (props) =>{
   return(
     <div>
